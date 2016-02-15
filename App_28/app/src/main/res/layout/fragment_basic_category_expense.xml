@@ -1,0 +1,41 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mySlidingTabColor"
+    android:id="@+id/fragment_basic_expense"
+    tools:context="com.codeitsuisse.team28.expensetracker.BasicCategoryExpense">
+    <Button
+        android:id="@+id/piebutton"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        style="?android:attr/colorButtonNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:background="@color/mySlidingAccentColor"
+        android:text="View Pie Chart Distribution"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mySlidingTabColor"
+        android:paddingRight="5dp"
+        tools:context="com.codeitsuisse.team28.expensetracker.ExpenseFragment"> -->
+
+        <com.codeitsuisse.team28.expensetracker.view.MaterialListView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/material_listview"
+            android:layout_marginTop="0dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

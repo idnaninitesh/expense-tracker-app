@@ -1,0 +1,64 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mySlidingTabColor"
+    android:id="@+id/fragment_basic_expense"
+    tools:context="com.codeitsuisse.team28.expensetracker.BasicExpense">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/addbutton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/myAddButton"
+            android:text="ADD EXPENSE"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"/>
+
+
+        <Button
+            android:id="@+id/resetbutton"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mySlidingAccentColor"
+            android:text="RESET EXPENSE"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mySlidingTabColor"
+        android:paddingRight="5dp"
+        tools:context="com.codeitsuisse.team28.expensetracker.ExpenseFragment">
+
+        <com.codeitsuisse.team28.expensetracker.view.MaterialListView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/material_listview"
+            android:layout_marginTop="0dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

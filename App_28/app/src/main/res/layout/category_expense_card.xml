@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.codeitsuisse.team28.expensetracker.card.CardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLayout"
+    android:background="@color/mySlidingTabColor">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        style="@style/BudgetDetailCardView"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="2dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        card_view:cardUseCompatPadding="true"
+        tools:targetApi="honeycomb">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleTextView"
+                android:layout_gravity="center"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:background="@color/mySlidingAccentColor"
+                android:textSize="@dimen/title_size"
+                android:textColor="#ffffff"
+                tools:text="El Pooch"/>
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionTextView"
+                android:layout_gravity="center"
+                android:paddingTop="16dp"
+                android:paddingLeft="30dp"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:background="@color/mySlidingAccentColor"
+                android:textSize="@dimen/title_size"
+                android:textColor="#ffffff"
+                tools:text="El Pooch"/>
+
+
+            <!-- <View
+                 android:id="@+id/cardDivider"
+                 android:layout_width="fill_parent"
+                 android:layout_marginTop="80dp"
+                 android:layout_height="1dp"
+                 android:background="@color/divider_grey"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp">
+
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_gravity="bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/description_color"
+                    android:textSize="13dp"
+                    android:id="@+id/descriptionTextView"
+                    android:paddingLeft="@dimen/small_padding"
+                    android:paddingBottom="@dimen/big_padding"
+                    android:paddingRight="@dimen/big_padding"
+                    tools:text="By Alex Nelson"/>
+            </LinearLayout>
+            ]]-->
+
+        </LinearLayout>
+        <!-- </LinearLayout> -->
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</com.codeitsuisse.team28.expensetracker.card.CardLayout>

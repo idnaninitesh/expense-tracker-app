@@ -1,0 +1,26 @@
+<!-- <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.idnaninitesh.drawermenu.CardLayoutFragment">
+
+    --><!-- TODO: Update blank fragment layout -->
+<!-- <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+    android:text="@string/hello_blank_fragment" />
+
+</FrameLayout> -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:background="@color/mySlidingTabColor"
+    android:paddingRight="5dp"
+    tools:context="com.codeitsuisse.team28.expensetracker.drawermenu.HomePageFragment">
+
+    <com.codeitsuisse.team28.expensetracker.view.MaterialListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/material_listview"/>
+
+</RelativeLayout>
